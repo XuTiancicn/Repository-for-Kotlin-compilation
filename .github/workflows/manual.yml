@@ -23,12 +23,16 @@ jobs:
     - name: 克隆仓库
       uses: actions/检出@v2
       with:
-        repository: '你的GitHub用户名/你的仓库名称'
+        repository: 'XuTiancicn/Repository for Kotlin compilation
+'
         token: ${{ secrets.GITHUB_TOKEN }}
-        path: '你的仓库名称'
+        path: 'Repository for Kotlin compilation
+'
 
     - name: 构建并运行 main.kt
       run: |
-        cd 你的仓库名称
+        cd Repository for Kotlin compilation
+
         ./gradlew 构建
-        kotlin 你的仓库名称/src/main/kotlin/main.kt
+        kotlin Repository for Kotlin compilation
+/src/main/kotlin/main.kt
