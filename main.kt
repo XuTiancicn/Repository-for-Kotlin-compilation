@@ -1,3 +1,3 @@
 fun main() {
-    println("你好，中国")
+    println("你好，中国Xiaomi")
 }
