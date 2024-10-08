@@ -1,0 +1,38 @@
+name: 构建和测试
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/检出@v2
+
+    - name: 设置 JDK 11 环境
+      uses: actions/设置-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+
+    - name: 设置 Kotlin
+      uses: kotlin/setup-action@v1
+      with:
+        kotlin-version: '1.6.10'
+
+    - name: 克隆仓库
+      uses: actions/检出@v2
+      with:
+        repository: 'XuTiancicn/Repository for Kotlin compilation
+'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: 'Repository for Kotlin compilation
+'
+
+    - name: 构建并运行 main.kt
+      run: |
+        cd Repository for Kotlin compilation
+
+        ./gradlew 构建
+        kotlin Repository for Kotlin compilation
+/src/main/kotlin/main.kt
