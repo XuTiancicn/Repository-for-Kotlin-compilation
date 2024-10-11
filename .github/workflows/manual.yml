@@ -34,4 +34,5 @@ jobs:
         cd Repository for Kotlin compilation
 
         ./gradlew 构建
-        kotlin Repository for Kotlin compilation
+        kotlin Repository-for Kotlin-compilation
+/src/main/kotlin/main.kt
