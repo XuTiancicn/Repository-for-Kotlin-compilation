@@ -1,4 +1,4 @@
-name: 构建和测试
+&name: 构建和测试
 
 on: [push]
 
@@ -35,4 +35,3 @@ jobs:
 
         ./gradlew 构建
         kotlin Repository-for Kotlin-compilation
-/src/main/kotlin/main.kt
